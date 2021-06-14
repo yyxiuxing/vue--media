@@ -6,13 +6,6 @@
 </template>
 
 <style>
-*{
-  margin: 0;
-  padding: 0;
-}
-li{list-style:none}
-img{vertical-align:top;border:none}
-
 #app {
   font-family: Helvetica;
   -webkit-font-smoothing: antialiased;
@@ -20,26 +13,4 @@ img{vertical-align:top;border:none}
   text-align: center;
   background: #FFFFFF;
 }
-@media screen and (max-width: 1441000px) and (min-width: 1441px) {
-  .side{
-    padding: 0 104px;
-  }
-}
-@media screen and (max-width: 1440px) and (min-width: 1069px) {
-  .side{
-    padding: 0 78px;
-  }
-}
-@media screen and (max-width: 1068px) and (min-width: 768px) {
-  .side{
-    padding: 0 58px;
-  }
-}
-/* 手机端的样式 */
-@media screen and (max-width: 767px) and (min-width: 0px) {
-  .side{
-    padding: 0 41px;
-  }
-}
-
 </style>
