@@ -1,23 +1,25 @@
 <template>
-  <div class="banner-bg side">
-    <ul class="head-nav">
-      <li class="head-nav-icon">
-        <img
-          src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPng45db1181188c260b408a80d168cbc8eeba45187d6668dcc8824821166660dea7"
-        />" alt="">
-        <span>MonYa</span>
-      </li>
-      <li class="head-nav-btn">
-        <span class="hot">Home</span>
-        <span>About us</span>
-      </li>
-      <li class="head-nav-contact">Contact us</li>
-    </ul>
-    <div class="head-content">
-      Mengya is an e-commerce wholesale platform focusing on Chinese GK and
-      statues, Serving distributors from all over the world.
+  <div class="banner-bg">
+    <div class="head-box side">
+      <ul class="head-nav">
+        <li class="head-nav-icon">
+          <img
+            src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPng45db1181188c260b408a80d168cbc8eeba45187d6668dcc8824821166660dea7"
+          />" alt="">
+          <span>MonYa</span>
+        </li>
+        <li class="head-nav-btn">
+          <span class="hot">Home</span>
+          <span>About us</span>
+        </li>
+        <li class="head-nav-contact">Contact us</li>
+      </ul>
+      <div class="head-content">
+        Mengya is an e-commerce wholesale platform focusing on Chinese GK and
+        statues, Serving distributors from all over the world.
+      </div>
+      <div class="head-bottom-btn">Contact us</div>
     </div>
-    <div class="head-bottom-btn">Contact us</div>
   </div>
 </template>
 
@@ -36,8 +38,15 @@ export default {
 
 <style scoped>
 .banner-bg {
-  background: url("../assets/banner.png") no-repeat center/100% 100%;
+  width: 100%;
+  min-width: 1300px;
+  height: 600px;
+  background: url("../assets/banner.png") no-repeat center/cover;
+}
+.head-box{
   position: relative;
+  width: 100%;
+  height: 100%;
 }
 .head-nav {
   height: 80px;
@@ -104,7 +113,12 @@ export default {
   line-height: 48px;
 }
 .head-content {
+  width: 640px;
+  top: 160px;
+  font-size: 40px;
+  line-height: 48px;
   position: absolute;
+  left:10px;
   color: #ffffff;
   text-align: left;
 }
@@ -115,6 +129,8 @@ export default {
   box-shadow: 0px 2px 6px 0px rgba(149, 31, 27, 0.6);
   border-radius: 29px;
   position: absolute;
+  left:10px;
+  bottom:148px;
   font-size: 32px;
   font-weight: bold;
   color: #ffffff;
@@ -122,58 +138,11 @@ export default {
   line-height: 58px;
   text-shadow: 0px 0px 2px rgba(225, 77, 72, 0.4);
 }
-@media screen and (max-width: 1930px) and (min-width: 1441px) {
-  .banner-bg {
-    height: 800px;
-  }
-  .head-content {
-    width: 853px;
-    top: 213px;
-    font-size: 54px;
-    line-height: 64px;
-  }
-  .head-bottom-btn{
-    bottom:197px;
-  }
-}
-@media screen and (max-width: 1440px) and (min-width: 1069px) {
-  .banner-bg {
-    height: 600px;
-  }
-  .head-content {
-    width: 640px;
-    top: 160px;
-    font-size: 40px;
-    line-height: 48px;
-  }
-  .head-bottom-btn{
-    bottom:148px;
-  }
-}
-@media screen and (max-width: 1068px) and (min-width: 768px) {
-  .banner-bg {
-    height: 445px;
-  }
-  .head-content {
-    width: 475px;
-    top: 119px;
-    font-size: 30px;
-    line-height: 34px;
-  }
-  .head-bottom-btn{
-    bottom:110px;
-  }
-}
 /* 手机端的样式 */
-@media screen and (max-width: 767px) and (min-width: 0px) {
-  .banner-bg {
-    height: 320px;
-  }
-  .head-content {
-    top: 85px;
-  }
-  .head-bottom-btn{
-    bottom:79px;
-  }
+@media screen and (max-width: 768px) and (min-width: 0px){
+  
 }
+
+
+
 </style>
